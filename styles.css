@@ -86,6 +86,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 60%;
+    height: 100%;
+    overflow: auto;
 }
 
 .normal-text-section {
@@ -137,7 +139,7 @@ form legend {
 
 .input {
     font-size: 1rem;
-    padding: 0.2rem;
+    padding: 0.4rem;
     border: 2px solid var(--form-item-border-color);
     border-radius: 0.4rem;
 }
