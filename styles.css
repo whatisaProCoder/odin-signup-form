@@ -1,0 +1,176 @@
+:root {
+    --background-color: #f0f0f0;
+    --primary-color: #596D48;
+    --accent-color: #3b79f7;
+    --normal-font-color: rgb(38, 38, 38);
+    --form-label-font-color: #494949;
+    --form-item-border-color: #E5E7EB;
+    --form-item-invalid-border-color: #EF4444;
+    --light-black: rgb(25, 25, 25);
+}
+
+a {
+    text-decoration: underline;
+    color: var(--background-color);
+}
+
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url('fonts/Norse-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.banner {
+    height: 100%;
+    flex: 1;
+    background-image: url('images/side_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    overflow: hidden
+}
+
+.brand-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(25, 25, 25, 0.8);
+    width: 100%;
+    padding: 1rem;
+    opacity: 0.8;
+    margin-top: 30%;
+    gap: 0.5rem;
+}
+
+.brand-logo {
+    height: 100px;
+}
+
+.brand-name {
+    font-family: "Norse-Bold";
+    color: var(--background-color);
+    font-size: 4rem;
+}
+
+.credit {
+    color: var(--background-color);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.normal-text-section {
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--normal-font-color);
+    padding: 2rem;
+}
+
+.form-section {
+    background-color: #f0f0f0;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--light-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+form legend {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--normal-font-color);
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--form-label-font-color);
+    letter-spacing: 0.1rem;
+    margin-left: 0.2rem;
+}
+
+.input {
+    font-size: 1rem;
+    padding: 0.2rem;
+    border: 2px solid var(--form-item-border-color);
+    border-radius: 0.4rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.input:required:invalid {
+    border-color: var(--form-item-invalid-border-color);
+}
+
+.create-account-button {
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 1rem;
+    outline: none;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.login-line {
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.login-line span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
