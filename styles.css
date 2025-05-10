@@ -183,6 +183,7 @@ form legend {
 
     .credit-section {
         padding-top: 1rem;
+        font-size: 0.7rem;
     }
 
     .form-section {
@@ -213,10 +214,6 @@ form legend {
 @media only screen and (max-width: 520px) {
     .form-row {
         flex-direction: column;
-    }
-
-    .credit-section {
-        font-size: 0.7rem;
     }
 
     .input {
