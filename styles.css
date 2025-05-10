@@ -217,4 +217,8 @@ form legend {
     .credit-section {
         font-size: 0.6rem;
     }
+
+    .input {
+        font-size: 0.8rem;
+    }
 }
