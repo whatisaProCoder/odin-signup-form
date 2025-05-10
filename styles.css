@@ -213,4 +213,8 @@ form legend {
     .form-row {
         flex-direction: column;
     }
+
+    .credit-section {
+        font-size: 0.6rem;
+    }
 }
