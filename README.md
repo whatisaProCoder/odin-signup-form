@@ -14,6 +14,8 @@ This is the basic Sign-Up Form we get to build in the "Intermediate HTML & CSS" 
 
 - **CSS Custom Properties (Variables)** – Reusable design tokens for colors, spacing, etc.
 
+- **Responsive Design (Media Queries)** – Making the layout adapt across screen sizes.
+
 ## Live Link
 
 [The Odin Project - Sign-up Form](https://whatisaprocoder.github.io/odin-signup-form/)
