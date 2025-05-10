@@ -21,3 +21,196 @@ a {
     font-weight: bold;
     font-style: normal;
 }
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    background: url(/images/side_banner.jpg);
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-section {
+    background-color: rgba(25, 25, 25, 0.8);
+    width: 100%;
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 0.5rem;
+    box-sizing: border-box;
+}
+
+.brand-logo {
+    height: 100px;
+}
+
+.brand-name {
+    font-size: 4.5rem;
+    color: var(--white);
+    font-family: "Norse-Bold";
+}
+
+.credit-section {
+    padding-top: 1;
+    padding-bottom: 1rem;
+    color: var(--white);
+}
+
+.content {
+    background-color: var(--background-color);
+    flex: 2;
+    font-family: sans-serif;
+}
+
+.normal-text-section {
+    width: 80%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--normal-font-color);
+    padding: 2rem;
+}
+
+.form-section {
+    background-color: #f8f8f8;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--light-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+form legend {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--normal-font-color);
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: var(--form-label-font-color);
+    letter-spacing: 0.1rem;
+    margin-left: 0.2rem;
+}
+
+.input {
+    font-size: 1rem;
+    padding: 0.4rem;
+    border: 2px solid var(--form-item-border-color);
+    border-radius: 0.4rem;
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.input:required:invalid {
+    border-color: var(--form-item-invalid-border-color);
+}
+
+.create-account-button {
+    margin-left: 2.5rem;
+    margin-top: 2.5rem;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-size: 1rem;
+    outline: none;
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.login-line {
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.login-line span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex: 0 0 20vh;
+        justify-content: space-around;
+    }
+
+    .brand-section {
+        margin-top: 3rem;
+    }
+
+    .credit-section {
+        padding-top: 1rem;
+    }
+
+    .form-section {
+        align-items: center;
+    }
+
+    .form-row {
+        gap: 2rem;
+    }
+
+    .create-account-button {
+        margin-left: 0;
+    }
+
+    .login-line {
+        margin-left: 0;
+    }
+
+    .button-and-login-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
